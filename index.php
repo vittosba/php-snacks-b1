@@ -17,6 +17,7 @@
 
 
     // Snack 3
+    echo "<h1>Posts</h1>";
     $posts = [
 
         '10/01/2019' => [
@@ -68,5 +69,16 @@
         }
     }
 
-    
+    // Snack 4
+    $arrNumRan = [];
+    echo "<h1>Numeri Random</h1>";
+    while (count($arrNumRan) < 15) {
+        $numRan = rand(1, 100);
+        
+        if(!in_array($numRan, $arrNumRan)) {
+            $arrNumRan[] = $numRan;
+            echo $numRan." ";
+        }
+
+    }
 ?>
