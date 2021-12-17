@@ -79,6 +79,20 @@
             $arrNumRan[] = $numRan;
             echo $numRan." ";
         }
-
     }
+
+    // Snack 5
+    $paragrafo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime labore est quasi ab facilis corporis vel laudantium nam quidem eius iste enim sequi commodi quo, porro dolorem iusto debitis molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, ullam vero iure autem fugit adipisci, ea odio cum vitae officia assumenda nobis consectetur maiores doloremque accusantium excepturi error, nostrum commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eius voluptates saepe autem explicabo, similique aliquam laudantium? Excepturi aperiam laborum nemo quasi vero amet quae, voluptas magnam, doloribus quia esse!";
+
+    $arrFrasi1 = explode(".", $paragrafo);
+    for($i = 0; $i < count($arrFrasi1); $i++) {
+        $arrFrasi2 = explode("!", $arrFrasi1[$i]);
+        for($j = 0; $j < count($arrFrasi2); $j++) {
+            $arrFrasi3 = explode("?", $arrFrasi2[$j]);
+            for($k = 0; $k < count($arrFrasi3); $k++) {
+                echo "<p>".$arrFrasi3[$k].".</p>";
+            }
+        }
+    }
+    
 ?>
